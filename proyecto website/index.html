@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007A33;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .galeria {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .galeria img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descubre El Salvador</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a El Salvador</h2>
+        <p>Explora las maravillas de El Salvador, desde sus playas hasta sus montañas, y descubre su rica cultura y gastronomía.</p>
+    </section>
+
+    <section id="destinos">
+        <h2>Destinos Populares</h2>
+        <ul>
+            <li>Playa El Tunco</li>
+            <li>Santa Ana</li>
+            <li>Suchitoto</li>
+            <li>Parque Nacional Cerro Verde</li>
+            <li>Ruta de las Flores</li>
+        </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <img src="img/playa el tunco.webp"Playa El Tunco">
+            <img src="img/centroamerica-cerro-verde.jpg" alt="Parque Nacional Cerro Verde">
+            <img src="img/Suchitoto.jpg" alt="Suchitoto">
+            <img src="img/Ruta flores.jpeg" alt="Ruta de las Flores">
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información, contáctanos a través del siguiente formulario:</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Turismo en El Salvador. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
